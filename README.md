@@ -253,8 +253,8 @@ export const getCalendarDate = (dateString: string) => {
 
 ##  Project Architecture
 
-<img width="420" alt="스크린샷 2023-02-28 오후 9 30 54" src="https://user-images.githubusercontent.com/81337674/221854813-f6a7589a-3189-4b1c-a821-2bc9eaa27d6a.png">
-<img width="420" alt="스크린샷 2023-02-28 오후 9 33 03" src="https://user-images.githubusercontent.com/81337674/221855213-bbb49326-b1f0-4218-b337-ca678bd04265.png">
+<img width="400" alt="스크린샷 2023-02-28 오후 9 30 54" src="https://user-images.githubusercontent.com/81337674/221854813-f6a7589a-3189-4b1c-a821-2bc9eaa27d6a.png">
+<img width="400" alt="스크린샷 2023-02-28 오후 9 33 03" src="https://user-images.githubusercontent.com/81337674/221855213-bbb49326-b1f0-4218-b337-ca678bd04265.png">
 
 <br>
 
