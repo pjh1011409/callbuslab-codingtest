@@ -353,9 +353,7 @@ export const getCalendarDate = (dateString: string) => {
 └──  📄 index.tsx
 ```
 
-<br>
 
-<img width="400" alt="스크린샷 2023-02-28 오후 9 33 03" src="https://user-images.githubusercontent.com/81337674/221855213-bbb49326-b1f0-4218-b337-ca678bd04265.png">
 
 <br>
 
