@@ -1,17 +1,18 @@
 ## 📚 콜버스랩 FE 과제 
 
 <br>
+리드미를 참고해주면 감사하겠습니다.  😃
+<br>
 <strong>🌈 목차</strong>
 <br>
 
 - [프로젝트 기간](#프로젝트-기간)
 - [Start](#start)
+- [Tools](#tools)
 - [Check List](#check-list)
-- [Issue & TroubleShooting](#issue--troubleshooting)
+- [ GIF & Image ](#gif--image)
 - [Project Architecture](#project-architecture)
 - [Module Install](#install-module)
-- [Tools](#tools)
-- [ GIF & Image ](#gif--image)
 
 
   
@@ -41,7 +42,28 @@ npm run start
 
 <br>
 
+##  Tools
+
+<p>
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
+<img src="https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=Typescript&logoColor=white">
+<img src="https://img.shields.io/badge/Redux-764ABC.svg?style=for-the-badge&logo=Redux&logoColor=%2361DAFB">  
+<br>
+<img src="https://img.shields.io/badge/Emotion-F16521?style=for-the-badge&logo=Etsy&logoColor=white">
+<img src="https://img.shields.io/badge/Ant Design-0170FE?style=for-the-badge&logo=Ant Design&logoColor=white">
+<img src="https://img.shields.io/badge/Chakra UI-319795?style=for-the-badge&logo=Chakra UI&logoColor=white">
+<br>
+<img src="https://img.shields.io/badge/ESlint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white">
+<img src="https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=Prettier&logoColor=white">
+<img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
+<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
+
+
+<br>
+
  ## Check List
+<mark style='background-color: yellow'> 💡 실제 구현 코드를 간략화한 코드들입니다. (화살표 버튼을 클릭하여 글을 확인해주세요.)</mark>
+<br>
 
  #### ✅ 조건
 
@@ -58,7 +80,6 @@ npm run start
 
 
 <strong>: 주어진 요구사항에 대한 구현 완료 </strong>
-<mark style='background-color: yellow'> 💡 실제 구현 코드를 간략화한 코드들입니다. (화살표 버튼을 클릭하여 글을 확인해주세요.)</mark>
 
 ####  ✅ 임대정보 입력 페이지
 
@@ -251,15 +272,94 @@ export const getCalendarDate = (dateString: string) => {
 
 <br>
 
+
+## GIF & Image
+
+|**임대정보 페이지** | **거주정보 입력 페이지**  |
+| :------: | :--------------: |
+|<img width="400" alt="스크린샷 2023-02-28 오후 10 00 09" src="https://user-images.githubusercontent.com/81337674/221859098-fef8c58d-4465-45f9-9a94-6abd970dcb0d.gif">|<img width="400" alt="스크린샷 2023-02-28 오후 10 00 09" src="https://user-images.githubusercontent.com/81337674/221859124-8cd66ba3-dfb6-4cae-b374-48e912eaaf56.gif">|
+| **완료 페이지** | **알림창**|
+|<img width="400" alt="스크린샷 2023-02-28 오후 10 00 09" src="https://user-images.githubusercontent.com/81337674/221859140-e4e0c6d2-10c0-47da-abb6-2256f3946c75.gif">|<img width="400" alt="스크린샷 2023-02-28 오후 10 00 09" src="https://user-images.githubusercontent.com/81337674/221861050-287f8f24-a1da-4441-b341-19a5df514db2.png">|
+| **월세** | **전세**|
+|<img width="400" alt="스크린샷 2023-02-28 오후 9 48 05" src="https://user-images.githubusercontent.com/81337674/221859341-f96d2640-61c1-459b-9fdc-ab33c7336f92.png">|<img width="400" alt="스크린샷 2023-02-28 오후 9 48 16" src="https://user-images.githubusercontent.com/81337674/221859438-67fd5428-62ac-44b5-933a-b3cfaaa18c36.png">|
+| **사용자정보** | **결과화면**|
+|<img width="400" alt="스크린샷 2023-02-28 오후 9 48 52" src="https://user-images.githubusercontent.com/81337674/221859916-3f66148c-a2f9-4885-924f-dc96a6ca78b2.png">|<img width="400" alt="스크린샷 2023-02-28 오후 9 49 00" src="https://user-images.githubusercontent.com/81337674/221859827-27131c62-3aa5-415f-b22f-0a12120ad33a.png">|
+| **주소API** | **캘린더 라이브러리**|
+|<img width="400" alt="스크린샷 2023-02-28 오후 9 50 26" src="https://user-images.githubusercontent.com/81337674/221860176-e40641ab-b507-41ac-a736-99b3e8da4950.png">|<img width="400" alt="스크린샷 2023-02-28 오후 9 50 42" src="https://user-images.githubusercontent.com/81337674/221860107-a24d4ae0-5626-40be-b5d3-470ed2d90570.png">|
+
+
+<br>
+
 ##  Project Architecture
 
-<img width="400" alt="스크린샷 2023-02-28 오후 9 30 54" src="https://user-images.githubusercontent.com/81337674/221854813-f6a7589a-3189-4b1c-a821-2bc9eaa27d6a.png">
+```
+⭐️ src
+|
+├── 🗂 redux 
+│     ├──  🗂 reducer - 📄 insplice.tsx
+│     └──  🗂 store - 📄 store.tsx
+│
+├── 🗂 components
+│   │
+│   ├── 🗂 completion
+│   │     ├── 📄 index.tsx
+│   │     ├── 📄 Top.tsx
+│   │     ├── 📄 Middle.tsx
+│   │     └── 📄 Bottom.tsx
+│   │
+│   ├── 🗂 Rental
+│   │     ├── 🗂 Input
+│   │     ├── 📄 index.tsx
+│   │     ├── 📄 Header.tsx
+│   │     └── 📄 InputWrapper.tsx
+│   │
+│   ├── 🗂 Residency
+│   │     ├── 🗂 Input
+│   │     ├── 📄 index.tsx
+│   │     └── 📄 Header.tsx
+│   │
+│   ├── 🗂 NavBar
+│   │     └── 📄 index.tsx
+│   │
+│   └──  🗂 LoadUI
+│         ├── 📄 LoadSpinner.tsx
+│         └── 📄 Skeleton.tsx
+│
+├── 🗂 hooks
+│     ├── 📄 useCustomSelector.ts
+│     ├── 📄 useCustomToast.ts
+│     └── 📄 useCustomInput.ts
+│
+├── 🗂 styles
+│     ├── 📄 COmpletion.style.ts
+│     ├── 📄 NavBar.style.ts
+│     ├── 📄 Rental.style.ts
+│     └── 📄 Residency.style.ts
+│
+├── 🗂 types - 📄 type.tsx
+│   
+├── 🗂 layout - 📄 layout.tsx
+│  
+├── 🗂 utils
+│     ├── 📄 getCalendarDate.ts
+│     └── 📄 getMontlyRefund.style.ts
+│
+├── 🗂 pages 
+│     ├──  🗂 rentalPage - 📄 index.tsx
+│     ├──  🗂 residencyPage - 📄 index.tsx
+│     └──  🗂 completionPage - 📄 index.tsx
+│
+├──  📄 app.tsx
+└──  📄 index.tsx
+```
+
+<br>
+
 <img width="400" alt="스크린샷 2023-02-28 오후 9 33 03" src="https://user-images.githubusercontent.com/81337674/221855213-bbb49326-b1f0-4218-b337-ca678bd04265.png">
 
 <br>
 
 ## Install Module 
-
 
 #### 👉 package.json
 
@@ -300,38 +400,6 @@ export const getCalendarDate = (dateString: string) => {
 
 ```
 
-
-##  Tools
-
-<p>
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=React&logoColor=white">
-<img src="https://img.shields.io/badge/Typescript-3178C6?style=for-the-badge&logo=Typescript&logoColor=white">
-<img src="https://img.shields.io/badge/Redux-764ABC.svg?style=for-the-badge&logo=Redux&logoColor=%2361DAFB">  
-<br>
-<img src="https://img.shields.io/badge/Emotion-F16521?style=for-the-badge&logo=Etsy&logoColor=white">
-<img src="https://img.shields.io/badge/Ant Design-0170FE?style=for-the-badge&logo=Ant Design&logoColor=white">
-<img src="https://img.shields.io/badge/Chakra UI-319795?style=for-the-badge&logo=Chakra UI&logoColor=white">
-<br>
-<img src="https://img.shields.io/badge/ESlint-4B32C3?style=for-the-badge&logo=ESLint&logoColor=white">
-<img src="https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=Prettier&logoColor=white">
-<img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white">
-<img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
-
-<br>
-
-## GIF & Image
-
-|**임대정보 페이지** | **거주정보 입력 페이지**  |
-| :------: | :--------------: |
-|<img width="400" alt="스크린샷 2023-02-28 오후 10 00 09" src="https://user-images.githubusercontent.com/81337674/221859098-fef8c58d-4465-45f9-9a94-6abd970dcb0d.gif">|<img width="400" alt="스크린샷 2023-02-28 오후 10 00 09" src="https://user-images.githubusercontent.com/81337674/221859124-8cd66ba3-dfb6-4cae-b374-48e912eaaf56.gif">|
-| **완료 페이지** | **알림창**|
-|<img width="400" alt="스크린샷 2023-02-28 오후 10 00 09" src="https://user-images.githubusercontent.com/81337674/221859140-e4e0c6d2-10c0-47da-abb6-2256f3946c75.gif">|<img width="400" alt="스크린샷 2023-02-28 오후 10 00 09" src="https://user-images.githubusercontent.com/81337674/221861050-287f8f24-a1da-4441-b341-19a5df514db2.png">|
-| **월세** | **전세**|
-|<img width="400" alt="스크린샷 2023-02-28 오후 9 48 05" src="https://user-images.githubusercontent.com/81337674/221859341-f96d2640-61c1-459b-9fdc-ab33c7336f92.png">|<img width="400" alt="스크린샷 2023-02-28 오후 9 48 16" src="https://user-images.githubusercontent.com/81337674/221859438-67fd5428-62ac-44b5-933a-b3cfaaa18c36.png">|
-| **사용자정보** | **결과화면**|
-|<img width="400" alt="스크린샷 2023-02-28 오후 9 48 52" src="https://user-images.githubusercontent.com/81337674/221859916-3f66148c-a2f9-4885-924f-dc96a6ca78b2.png">|<img width="400" alt="스크린샷 2023-02-28 오후 9 49 00" src="https://user-images.githubusercontent.com/81337674/221859827-27131c62-3aa5-415f-b22f-0a12120ad33a.png">|
-| **주소API** | **캘린더 라이브러리**|
-|<img width="400" alt="스크린샷 2023-02-28 오후 9 50 26" src="https://user-images.githubusercontent.com/81337674/221860176-e40641ab-b507-41ac-a736-99b3e8da4950.png">|<img width="400" alt="스크린샷 2023-02-28 오후 9 50 42" src="https://user-images.githubusercontent.com/81337674/221860107-a24d4ae0-5626-40be-b5d3-470ed2d90570.png">|
 
 
 
